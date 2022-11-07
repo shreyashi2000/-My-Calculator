@@ -1,53 +1,64 @@
-@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Inter+Tight:wght@200;300&display=swap");
-
-html,
-body {
-  height: 100%;
-  width: 100%;
-  background: black;
-  background-size: cover;
+body{
+    background-image: url(image.webp);
 }
-.center {
-  text-align: center;
-  color: azure;
+.container{
+    height: 400px;
+    width: 500px;
+    /* box-shadow: rgba(50, 50, 93,0.25) 0px 6px 12px -2px */
+    /* rgba(0, 0, 0, 0.3); */
+    background: rgb(105, 243, 220);
+    position: absolute;
+    top: 20%;
+    left: 31%;
+    transform: translate(-50% -50%);
+    border: 2px solid rgb(6, 151, 161);
+    border-radius: 10px;
 }
-.button {
-  width: 55px;
-  padding: 20px;
-  margin: 0 3px;
-  border: 2px solid black;
-  border-radius: 9px;
-  font-weight: bold;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  background: rgb(175, 77, 162);
+.title{
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 35px;
+    font-family: 500;
+    color: rgb(108, 9, 201);
+    font-weight: 600;
 }
-.container {
-  display:inline-block;
-  margin: auto;
-  align-items: center;
+.enter{
+    /* margin: 10px; */
+    height: 250px;
+    width: 400px;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    transform: translate(-50% -50%);
+    font-family: sans-serif;
+    /* border: none; */
+    /* outline: none; */
+    border: 2px solid rgb(53, 6, 161); 
+    border-radius: 5px;
 }
-.flex {
-  display: flex;
+.title::before{
+    content: "Enter Text";
+    font-family: sans-serif;
+    position: absolute;
+    top: 75px;
+    color: black;
+    font-size: 25px;
+    margin-left: -40px;
+    font-weight: 500;
 }
-.flex-col {
-  flex-direction: column;
-}
-.row {
-  margin: 6px 0;
-}
-input {
-  background: rgb(184, 181, 181);
-}
-.row input {
-  font-size: 20px;
-  margin: 0;
-  padding: 12px 0px;
-  border: 2px solid black;
-  border-radius: 5px;
-}
-.row .button.red {
-  background-color: rgb(240, 87, 32);
-}
-.row .button.gre {
-  background: rgb(21, 205, 211);
+.btn{
+    color: whitesmoke;
+    background:  rgb(108, 9, 201);
+    height: 40px;
+    width: 410px;
+    font-family: sans-serif;
+    position: absolute;
+    bottom: 10px;
+    left: 10%;
+    transform: translate(-50% -50%);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
 }
